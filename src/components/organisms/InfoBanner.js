@@ -1,10 +1,9 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import "../../pcss/InfoBanner.css"
 
 const InfoBanner = () => (
   <div className="info-banner">
-    Info Banner
+    <div className="info-banner--text">Info Banner</div>
   </div>
 )
 

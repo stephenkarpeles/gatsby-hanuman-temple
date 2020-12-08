@@ -1,0 +1,7 @@
+.info-banner {
+  background: red;
+
+  &--text {
+    color: blue;
+  }
+}
