@@ -1,0 +1,113 @@
+/* ====================================
+   Variables 
+   ==================================== */
+:root {
+  /* Colors */
+  --color-1: #fdb14a; /* Yellow */
+  --color-2: #c45019; /* Orange */
+  --color-3: #30797d; /* Teal */
+  --color-4: #1C334a; /* Dark Blue */
+  --color-5: #8e4a4a; /* Rose */
+
+  /* Fonts */
+  --font-stack-1: 'Cormorant Garamond', Georgia, serif;
+  --font-stack-2: 'Josefin Sans', Helvetica, Arial, sans-serif;
+
+  /* Layout */
+  --container-width: 92%;
+  --container-max-width: 71.25rem; /* 1140px */
+
+  /* Font Sizes */
+  --font-size-h1: 6rem;      /* 96px */
+  --font-size-h2: 4.5rem;    /* 72px */
+  --font-size-h3: 4rem;      /* 64px */
+  --font-size-h4: 3.5rem;    /* 56px */
+  --font-size-h5: 3rem;      /* 48px */
+  --font-size-h6: 2.25rem;   /* 36px */
+  --font-size-h7: 1.75rem;   /* 28px */
+  --font-size-p:  1rem;      /* 16px */
+  --font-size-p:  1rem;      /* 16px */
+}
+
+/* ====================================
+   Base Styles 
+   ==================================== */
+* {
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;    
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background: white;
+  font-family: var(--font-stack-1);
+}
+
+/* ====================================
+   Layout
+   ==================================== */
+.container {
+  width: var(--container-width);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+
+/* ====================================
+   Typography
+   ==================================== */
+h1 {
+  font-family: var(--font-stack-1);
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  line-height: 1.1;
+  padding-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: var(--font-stack-1);
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  line-height: 1.25;
+  padding-bottom: 1.25rem;
+}
+
+h3 {
+  font-family: var(--font-stack-1);
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  line-height: 1.25;
+  padding-bottom: 1.25rem;
+}
+
+h4 {
+  font-family: var(--font-stack-2);
+  font-size: var(--font-size-h4);
+  font-weight: 700;
+  line-height: 1.25;
+  padding-bottom: 1.25rem;
+}
+
+h5 {
+  font-family: var(--font-stack-2);
+  font-size: var(--font-size-h5);
+  font-weight: 300;
+  line-height: 1.25;
+  padding-bottom: 1.25rem;
+}

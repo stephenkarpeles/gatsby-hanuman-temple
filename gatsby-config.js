@@ -21,6 +21,14 @@ module.exports = {
         url: 'https://example.org/actions/graphql/api'
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Josefin Sans', 'Cormorant Garamond']
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `postcss-simple-vars`,
     {

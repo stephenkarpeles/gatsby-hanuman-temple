@@ -1,7 +1,5 @@
 .info-banner {
-  background: red;
-
-  &--text {
-    color: blue;
-  }
+  padding: 1rem 0;
+  background: var(--color-1);
+  color: var(--color-5);
 }
