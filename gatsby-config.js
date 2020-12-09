@@ -1,8 +1,10 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hanuman Temple`,
+    description: ``,
+    author: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,10 +26,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        google: {
-          families: ['Josefin Sans', 'Cormorant Garamond']
-        }
-      }
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
+      },
     },
     `gatsby-transformer-sharp`,
     `postcss-simple-vars`,

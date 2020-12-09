@@ -1,0 +1,14 @@
+.hero {
+  padding: 8rem 0;
+  background: url('../images/hero-tall.jpg');
+  background-size: cover;
+
+  &--alt {
+    text-align: center;
+
+    h1 {
+      color: var(--color-6);
+      margin: 0 auto;
+    }
+  }
+}

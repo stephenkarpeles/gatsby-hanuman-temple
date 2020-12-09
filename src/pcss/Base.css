@@ -8,10 +8,11 @@
   --color-3: #30797d; /* Teal */
   --color-4: #1C334a; /* Dark Blue */
   --color-5: #8e4a4a; /* Rose */
+  --color-6: #faf2dc; /* Off White */
 
   /* Fonts */
-  --font-stack-1: 'Cormorant Garamond', Georgia, serif;
-  --font-stack-2: 'Josefin Sans', Helvetica, Arial, sans-serif;
+  --font-stack-1: 'cormorant-garamond', Georgia, serif;
+  --font-stack-2: 'josefin-sans', Helvetica, Arial, sans-serif;
 
   /* Layout */
   --container-width: 92%;
@@ -25,7 +26,7 @@
   --font-size-h5: 3rem;      /* 48px */
   --font-size-h6: 2.25rem;   /* 36px */
   --font-size-h7: 1.75rem;   /* 28px */
-  --font-size-p:  1rem;      /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
   --font-size-p:  1rem;      /* 16px */
 }
 
@@ -68,15 +69,24 @@ body {
   margin: 0 auto;
 }
 
-
 /* ====================================
    Typography
    ==================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 h1 {
   font-family: var(--font-stack-1);
   font-size: var(--font-size-h1);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: .9;
   padding-bottom: 1.5rem;
 }
 
@@ -97,7 +107,7 @@ h3 {
 }
 
 h4 {
-  font-family: var(--font-stack-2);
+  font-family: var(--font-stack-1);
   font-size: var(--font-size-h4);
   font-weight: 700;
   line-height: 1.25;
@@ -105,9 +115,29 @@ h4 {
 }
 
 h5 {
-  font-family: var(--font-stack-2);
+  font-family: var(--font-stack-1);
   font-size: var(--font-size-h5);
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.25;
   padding-bottom: 1.25rem;
+}
+
+h6 {
+  font-family: var(--font-stack-1);
+  font-size: var(--font-size-h6);
+  font-weight: 700;
+  line-height: 1.25;
+  padding-bottom: 1.25rem;
+}
+
+/* ====================================
+   Links
+   ==================================== */
+.link {
+  &--1 {
+    padding-bottom: 2px;
+    font-style: italic;
+    font-weight: 900;
+    border-bottom: 2px solid var(--color-5);
+  }
 }
