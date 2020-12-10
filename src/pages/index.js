@@ -8,6 +8,7 @@ import BaseCard from "../components/molecules/BaseCard"
 import EventCard from "../components/molecules/EventCard"
 import FullWidthContent from "../components/organisms/FullWidthContent"
 import LeftRightContent from "../components/organisms/LeftRightContent"
+import NewsletterBlock from "../components/organisms/NewsletterBlock"
 import Reservations from "../components/molecules/Reservations"
 import participationImg1 from "../images/participation1.jpg"
 import participationImg2 from "../images/participation2.jpg"
@@ -60,35 +61,12 @@ const IndexPage = () => (
     </div>   
 
     <div className="styled-background-1">
-      <div class="styled-background-1__decor-top"></div>
-      <div class="styled-background-1__decor-middle"></div>
-      <div class="styled-background-1__content">
-        <div className="event-card-block event-card-block--home"> 
-      <div className="event-card-block__intro">
-        <h3>Upcoming Events</h3>
-        <div className="event-card-block__decor event-card-block__decor--top">
-          <img src={iconArtTopRed} alt=""/>
-        </div>
-        <p>Stay connected to Sankaṭ Mochan Hanumān Temple through our many streaming events. </p>
+      <div className="styled-background-1__decor-top"></div>
+      <div className="styled-background-1__decor-middle"></div>
+      <div className="styled-background-1__content">
+        <NewsletterBlock/>
       </div>
-
-      <div className="container flex-row flex-row--3-up">        
-        <EventCard image={eventImg1} time="Daily 6:30am & 6:00pm" title="Ārati" text="A devotional service offered to one's chosen form of God is performed at Gaṇesh Temple and Hanumān Temple twice daily." />
-        <EventCard image={eventImg2} time="Tuesday, Nov 24th" title="Sindoor Pūja" text="Every Tuesday before the full moon. Prior to Ārati, we start at 6am with Hanumān Pūja, with Hanumān Chālisā Pāṭh at 6:30." />
-        <EventCard image={eventImg3} time="Tuesday, Dec 29th" title="Sindoor Pūja" text="Every Tuesday before the full moon. Prior to Ārati, we start at 6am with Hanumān Pūja, with Hanumān Chālisā Pāṭh at 6:30." />        
-      </div>
-      <div className="row row--justify-content-center">
-        <div className="container">
-          <div className="col col-full-width text-centered">
-            <div className="event-btn-block">
-              <Link to="/" className="btn btn--1">View All</Link>          
-            </div>
-          </div>  
-        </div>
-      </div>
-    </div> 
-      </div>
-      <div class="styled-background-1__decor-bottom"></div>
+      <div className="styled-background-1__decor-bottom"></div>
     </div>
 
   </Layout>
