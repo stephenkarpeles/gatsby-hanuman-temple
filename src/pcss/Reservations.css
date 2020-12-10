@@ -1,0 +1,23 @@
+.reservations {
+  padding: 3rem 0 5rem;
+  background: var(--color-3);
+  text-align: center;
+
+  &__heading {
+    color: var(--color-1);
+  }
+
+  &__text {
+    color: var(--color-6);
+    padding-bottom: 2.5rem;
+
+    p {
+      font-weight: 600;
+      font-size: var(--font-size-xxlg);
+      width: 100%;
+      max-width: 37.5rem;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+  }
+}

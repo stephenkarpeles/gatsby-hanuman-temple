@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <InfoBanner />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />      
       <main>{children}</main>
-      <footer>Footer
+      <footer>
       </footer>  
     </>
   )

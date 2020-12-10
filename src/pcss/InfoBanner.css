@@ -1,5 +1,5 @@
 .info-banner {
-  padding: 1rem 0;
+  padding: 1.125rem 0 .875rem;
   background: var(--color-1);
   color: var(--color-5);
   font-size: var(--font-size-lg);

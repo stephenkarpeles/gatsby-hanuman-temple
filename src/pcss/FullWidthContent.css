@@ -1,0 +1,34 @@
+.full-width-content {
+  background: var(--color-3);
+  overflow: visible;
+  position: relative;
+
+  h3 {
+    color: var(--color-6);
+  }
+
+  &__text {
+    padding: 8rem 0;
+    overflow: visible;
+    background: url('../images/mandala.png');
+    background-size: 508px 508px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  &__decor {
+    img {
+      margin: 0 auto;
+    }
+    &--top {
+      margin-bottom: 2rem;
+    }
+
+    &--bottom {
+      margin-top: 2rem;
+    }
+
+    
+  }
+}

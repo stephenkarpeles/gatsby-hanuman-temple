@@ -1,0 +1,23 @@
+.left-right-content {
+  background: var(--color-3);
+  padding: 2rem 0 5rem;
+
+  &__image {
+  }
+
+  &__text {
+    p {
+      font-size: var(--font-size-h6);
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--color-6);
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+.col-left-right-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

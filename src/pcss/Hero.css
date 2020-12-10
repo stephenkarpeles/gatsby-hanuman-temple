@@ -1,7 +1,8 @@
 .hero {
-  padding: 8rem 0;
+  padding: 14rem 0 12rem;
   background: url('../images/hero-tall.jpg');
   background-size: cover;
+  position: relative;
 
   &--alt {
     text-align: center;
@@ -9,6 +10,22 @@
     h1 {
       color: var(--color-6);
       margin: 0 auto;
+      padding-bottom: 4rem;
     }
+  }
+
+  &__content {
+    padding-bottom: 8rem;
+  }
+
+  &__base {
+    z-index: 5;
+    background: url('../images/temple-pattern-gradient.png');
+    background-repeat: repeat-x;
+    background-size: 80%;
+    background-position: center bottom;
+    width: 100%;
+    height: 10.5rem;
+    margin-bottom: -12rem; /* Inverse of bottom padding on .hero */
   }
 }
