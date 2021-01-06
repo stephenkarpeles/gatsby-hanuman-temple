@@ -1,0 +1,44 @@
+.header {
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+
+  &__nav {
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    li {
+      margin-left: 3rem;
+
+      &:last-of-type {
+        a {
+          border: 1px solid white;
+          padding: 10px 22px;
+          transition: all .3s ease;
+
+          &:hover {
+            background: rgba(0, 0, 0, .1);
+          }
+        }
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-style: italic;
+      letter-spacing: 1px;
+      font-size: 1.25rem;
+    }
+  }
+}

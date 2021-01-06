@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-// import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade';
 import SEO from "../components/seo"
 import Hero from "../components/organisms/Hero"
 import BaseCard from "../components/molecules/BaseCard"
@@ -9,6 +9,8 @@ import EventCard from "../components/molecules/EventCard"
 import FullWidthContent from "../components/organisms/FullWidthContent"
 import LeftRightContent from "../components/organisms/LeftRightContent"
 import NewsletterBlock from "../components/organisms/NewsletterBlock"
+import SupportBlock from "../components/organisms/SupportBlock"
+import ProjectBlock from "../components/organisms/ProjectBlock"
 import Reservations from "../components/molecules/Reservations"
 import participationImg1 from "../images/participation1.jpg"
 import participationImg2 from "../images/participation2.jpg"
@@ -64,9 +66,22 @@ const IndexPage = () => (
       <div className="styled-background-1__decor-top"></div>
       <div className="styled-background-1__decor-middle"></div>
       <div className="styled-background-1__content">
-        <NewsletterBlock/>
+        <Fade>
+          <NewsletterBlock/>
+        </Fade>
       </div>
       <div className="styled-background-1__decor-bottom"></div>
+    </div>
+
+    <div className="footer-block footer-block--home">
+      <div class="footer-block__content">
+        <div class="container">
+          <SupportBlock/>
+          <Fade>
+            <ProjectBlock/>
+          </Fade>
+        </div>
+      </div>  
     </div>
 
   </Layout>

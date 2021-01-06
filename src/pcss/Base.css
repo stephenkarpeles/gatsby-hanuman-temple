@@ -17,7 +17,9 @@
 
   /* Layout */
   --container-width: 92%;
+  --container-large-width: 96%;
   --container-max-width: 71.25rem; /* 1140px */
+  --container-large-max-width: 80rem; /* 1280px */
   --gutter-width: 1rem;
 
   /* Font Sizes */
@@ -78,6 +80,11 @@ body {
   width: var(--container-width);
   max-width: var(--container-max-width);
   margin: 0 auto;
+
+  &--large {
+    width: var(--container-large-width);
+    max-width: var(--container-large-max-width);
+  }
 }
 
 .flex-row {
