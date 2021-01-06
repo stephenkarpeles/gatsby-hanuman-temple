@@ -19,11 +19,12 @@ import eventImg1 from "../images/event-image-1.jpg"
 import eventImg2 from "../images/event-image-2.jpg"
 import eventImg3 from "../images/event-image-3.jpg"
 import iconArtTopRed from "../images/icons/icon-art-top-red.svg"
+import heroImage from "../images/backgrounds/hero-tall.jpg"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />    
-    <Hero/>
+    <Hero bgImg={heroImage}/>
     
     <div className="base-card-row base-card-row--home"> 
       <div className="container flex-row flex-row--3-up">        

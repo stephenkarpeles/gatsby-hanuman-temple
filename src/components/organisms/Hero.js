@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade';
 import "../../pcss/Hero.css"
 
-const Hero = () => (
-  <div className="hero hero--alt">
+const Hero = (props) => (
+  <div className="hero hero--alt" style={{ backgroundImage:`url(${props.bgImg})` }}>
     <div className="container">
       <Fade>
         <div className="hero__content">
