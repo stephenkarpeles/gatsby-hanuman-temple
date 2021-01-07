@@ -29,7 +29,7 @@ const panes = [
   { menuItem: 'Kaya Kalpa Wellness Center', render: () => <Tab.Pane><Fade><p>Slide Eleven - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },  
 ]
 
-const SecondPage = () => (
+const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <HeroInternal bgImg={heroImage} heading="About Us" subheading="Sankaṭ Mochan Hanumān Temple is part of  the learning community within Mount Madonna Center."/>
@@ -111,4 +111,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default AboutPage
