@@ -39,6 +39,11 @@
       font-style: italic;
       letter-spacing: 1px;
       font-size: 1.25rem;
+      transition: opacity .2s ease;
+
+      &:hover {
+        opacity: .7;
+      }
     }
   }
 }
