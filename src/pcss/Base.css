@@ -69,8 +69,49 @@ body {
 /* ====================================
    Utilities
    ==================================== */
+.img-centered {
+  text-align: center;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.img-shadow-1 {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, .25);
+}
+
 .text-centered {
   text-align: center;
+}
+
+.text-columns {
+  &-2up {
+    column-count: 2;
+    column-gap: 50px;
+  }
+}
+
+.section-padding {
+  &-xs {
+    padding: 1rem 0;
+  }
+
+  &-sm {
+    padding: 2rem 0;
+  }
+
+  &-md {
+    padding: 4rem 0;
+  }
+
+  &-lg {
+    padding: 6rem 0;
+  }
+
+  &-xlg {
+    padding: 8rem 0;
+  }
 }
 
 /* ====================================
@@ -178,6 +219,14 @@ p {
   margin: 0;
 }
 
+p {
+  font-family: var(--font-stack-1);
+  font-size: var(--font-size-xxlg);
+  font-weight: 500;
+  line-height: 1.4;
+  padding-bottom: 1.5rem;
+}
+
 h1 {
   font-family: var(--font-stack-1);
   font-size: var(--font-size-h1);
@@ -224,6 +273,56 @@ h6 {
   font-weight: 700;
   line-height: 1.25;
   padding-bottom: 1.25rem;
+}
+
+.font-size-xxxlg {
+  font-size: var(--font-size-xxxlg);
+}
+
+.font-size-xxlg {
+  font-size: var(--font-size-xxlg);
+}
+
+.font-size-xlg {
+  font-size: var(--font-size-xlg);
+}
+
+.font-size-lg {
+  font-size: var(--font-size-lg);
+}
+
+.font-size-p {
+  font-size: var(--font-size-p);
+}
+
+.text-color {
+  &-1 {
+    color: var(--color-1);
+  }
+
+  &-2 {
+    color: var(--color-2);
+  }
+
+  &-3 {
+    color: var(--color-3);
+  }
+
+  &-4 {
+    color: var(--color-4);
+  }
+
+  &-5 {
+    color: var(--color-5);
+  }
+
+  &-6 {
+    color: var(--color-6);
+  }
+
+  &-7 {
+    color: var(--color-7);
+  }
 }
 
 .has-dropcap:first-letter {
@@ -298,6 +397,36 @@ h6 {
 /* ====================================
    Backgrounds
    ==================================== */
+.bg {
+  &-color-1 {
+    background: var(--color-1);
+  }
+
+  &-color-2 {
+    background: var(--color-2);
+  }
+
+  &-color-3 {
+    background: var(--color-3);
+  }
+
+  &-color-4 {
+    background: var(--color-4);
+  }
+
+  &-color-5 {
+    background: var(--color-5);
+  }
+
+  &-color-6 {
+    background: var(--color-6);
+  }
+
+  &-color-7 {
+    background: var(--color-7);
+  }
+}
+
 .styled-background-1 {
   position: relative;
   background: var(--color-5);
