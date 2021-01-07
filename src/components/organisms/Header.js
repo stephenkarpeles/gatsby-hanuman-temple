@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
     <div className="header__container container container--large">
       <div className="header__logo">
         <Link to="/">
-          <img src={logo}/>
+          <img alt="" src={logo}/>
         </Link>
       </div>
       <div className="header__nav">

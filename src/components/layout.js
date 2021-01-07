@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./organisms/Header"
 import InfoBanner from "./organisms/InfoBanner"
+//import 'semantic-ui-css/semantic.min.css'
 import "../pcss/Base.css"
 import "../pcss/Footer.css"
 

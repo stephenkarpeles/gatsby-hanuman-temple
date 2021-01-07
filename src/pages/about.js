@@ -1,5 +1,5 @@
 import React from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade';
 import HeroInternal from "../components/organisms/HeroInternal"
 import Layout from "../components/layout"
@@ -10,6 +10,24 @@ import heroImage from "../images/backgrounds/about-hero.jpg"
 import iconArtTopRed from "../images/icons/icon-art-top-red.svg"
 import iconArtTopYellow from "../images/icons/icon-art-top-yellow.svg"
 import aboutImage from "../images/about-pic.jpg"
+import aboutLandscapeImage from "../images/about-temple-landscape.jpg"
+import { Tab } from 'semantic-ui-react'
+import "../pcss/ContentSwitcher.css"
+
+const panes = [
+  { menuItem: 'Hanumān Fellowship', render: () => <Tab.Pane><Fade><img className="img-shadow-1" alt="" src={aboutLandscapeImage}/><p>Slide 1 - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Mount Madonna Center', render: () => <Tab.Pane><Fade><p>Slide Two - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Mount Madonna Institute', render: () => <Tab.Pane><Fade><img className="img-shadow-1" alt="" src={aboutLandscapeImage}/><p>Slide Three - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Mount Madonna School', render: () => <Tab.Pane><Fade><p>Slide Four - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Anjaneya’s World Cafe', render: () => <Tab.Pane><Fade><img className="img-shadow-1" alt="" src={aboutLandscapeImage}/><p>Slide Five - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Oceanview Books & Gifts', render: () => <Tab.Pane><Fade><p>Slide Six - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Pacific Cultural Center', render: () => <Tab.Pane><Fade><img className="img-shadow-1" alt="" src={aboutLandscapeImage}/><p>Slide Seven - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Salt Springs Center of Yoga', render: () => <Tab.Pane><Fade><p>Slide Eight - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Sri Ram Ashram', render: () => <Tab.Pane><Fade><img className="img-shadow-1" alt="" src={aboutLandscapeImage}/><p>Slide Nine - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Sri Ram Publishing', render: () => <Tab.Pane><Fade><p>Slide Nine - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Āyurveda World Herb Store', render: () => <Tab.Pane><Fade><img className="img-shadow-1" alt="" src={aboutLandscapeImage}/><p>Slide Ten - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },
+  { menuItem: 'Kaya Kalpa Wellness Center', render: () => <Tab.Pane><Fade><p>Slide Eleven - The Mount Madonna Center has always been a place of natural magic, power and personal transformation. Here, people can meet themselves and each other while engaged in spiritual practice, study, community, and service.</p><Link className="link link--2" to="/">Visit Site</Link></Fade></Tab.Pane> },  
+]
 
 const SecondPage = () => (
   <Layout>
@@ -51,11 +69,13 @@ const SecondPage = () => (
       </section>
     </Fade>
 
-    <section className="bg-color-6"> 
-      <ImageGrid/>
-    </section>
+    <Fade>
+      <section className="bg-color-6"> 
+        <ImageGrid/>
+      </section>
+    </Fade>
 
-    <section className="bg-color-3 section-padding-lg">
+    <section className="bg-color-3 section-padding-lg bg-fade-3">
       <div className="container">
         <div className="row">
           <div className="col col-full-width">
@@ -69,6 +89,11 @@ const SecondPage = () => (
           <div className="col col-2-3">
             <p className="font-size-xxxlg text-centered text-color-6">Inspired by the teachings of Baba Hari Das, his students established a number of projects both on the Mount Madonna Center campus and throughout the World.</p>
           </div>
+        </div>
+        <div className="content-switcher section-padding-sm">
+          <Tab
+            panes={panes}
+          />
         </div>
       </div>
     </section>

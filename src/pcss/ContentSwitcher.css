@@ -1,0 +1,63 @@
+.content-switcher {
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu,
+  .bottom {
+    width: calc(50% - 2rem);
+  }
+
+  .menu {
+    position: relative;
+    overflow-y: scroll;
+    height: 700px;
+    padding-bottom: 100px;
+    
+    /* Hide scrollbars */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    a {
+      display: block;
+      font-size: 3rem;
+      color: var(--color-1);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+      transition: color .2s ease;
+
+      &.active,
+      &:hover {
+        color: var(--color-6);
+      }
+    }
+  }
+
+  .tab {
+    padding-top: 1rem;
+    align-self: flex-start;
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0;
+
+    img {
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-weight: 500;
+      color: var(--color-6);
+      font-size: 1.5rem;
+
+      &:last-of-type {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}

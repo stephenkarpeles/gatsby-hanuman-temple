@@ -427,6 +427,24 @@ h6 {
   }
 }
 
+.bg {
+  &-fade-3 {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      z-index: 100;
+      pointer-events: none;
+      width: calc(50% - 2rem);
+      height: 400px;
+      background: linear-gradient(0deg, rgba(48,121,125,1) 0%, rgba(48,121,125,0) 100%);
+    } 
+  }
+}
+
 .styled-background-1 {
   position: relative;
   background: var(--color-5);
