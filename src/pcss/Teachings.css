@@ -1,5 +1,6 @@
 .teachings-filter {
-	padding: 1rem 0;
+	padding: 1.75rem 0;
+	border-bottom: 1px solid var(--color-1);
 
 	ul {
 		display: flex;
@@ -9,7 +10,7 @@
 
 	li {
 		list-style-type: none;
-		margin-right: 1.5rem;
+		margin-right: 1.75rem;
 
 		&:last-child {
 			margin-right: 0;
@@ -23,6 +24,11 @@
 		font-weight: 600;
 		letter-spacing: 1px;
 		display: flex;
+		transition: opacity .2s ease;
+
+		&:hover {
+			opacity: .7;
+		}
 
 		img {
 			display: inline-block;

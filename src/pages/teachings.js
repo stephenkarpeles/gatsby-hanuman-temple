@@ -12,7 +12,7 @@ import iconMicYellow from "../images/icons/icon-mic-yellow.svg"
 import iconPlayYellow from "../images/icons/icon-play-yellow.svg"
 import iconAudioYellow from "../images/icons/icon-audio-yellow.svg"
 import iconArtTopYellow from "../images/icons/icon-art-top-yellow.svg"
-// import aboutLandscapeImage from "../images/about-temple-landscape.jpg"
+import featuredTeachingImage from "../images/featured-teaching.jpg"
 import "../pcss/ContentSwitcher.css"
 import "../pcss/Hero.css"
 import "../pcss/Teachings.css"
@@ -43,10 +43,11 @@ const TeachingsPage = () => (
           </li>
         </ul>
       </div>
-        <div className="row">
+        <div className="row section-padding-md">
           <div className="col col-7-12">
             <div className="featured-teaching">
-              Test
+              <h5 className="text-uppercase font-size-xlg text-color-1 font-family-2">Featured Teaching:</h5>
+              <img src={featuredTeachingImage} alt="Featured Teaching Image"/>
             </div>
           </div>
         </div>
